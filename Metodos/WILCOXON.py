@@ -29,7 +29,7 @@ def calcular_wilcoxon_paso(grupo_1, grupo_2) -> float:
 
 def calcular_wilcoxon(grupo_1, grupo_2) -> float:
     stat, p = wilcoxon(grupo_1, grupo_2)
-    return stat
+    return stat,p
 
 if __name__ == "__main__":
     grupo_1 = [20, 23, 21, 25, 18, 19, 17]
