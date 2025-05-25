@@ -43,7 +43,7 @@ def calcular_mannwhitneyu(grupo_1:list ,grupo_2:list) -> float:
     grupo 2 : lista
     """
     U, P = mannwhitneyu(grupo_1,grupo_2, alternative='two-sided')
-    return U
+    return U, P
 
 if __name__ == "__main__":
     grupo_1 = [20, 23, 21, 25, 18, 19, 17]
